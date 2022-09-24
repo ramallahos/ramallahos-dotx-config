@@ -15,7 +15,7 @@ package() {
     cd "$pkgname"
     install -d "${pkgdir}/etc/skel/.config/X11/"
     install -Dm 644 ".Xresources" "${pkgdir}/etc/skel/.Xresources"
-    install -Dm 644 xmodmap "${pkgdir}/etc/skel/.config/X11/xmodmap"
+    install -Dm 644 ".Xmodmap" "${pkgdir}/etc/skel/.Xmodmap"
     install -Dm 644 ".xinitrc" "${pkgdir}/etc/skel/.xinitrc"
 
 }
