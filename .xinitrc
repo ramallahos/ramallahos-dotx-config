@@ -1,0 +1,2 @@
+ramallahos-autostart &
+exec bspwm
