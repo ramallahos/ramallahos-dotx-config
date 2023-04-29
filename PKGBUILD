@@ -14,9 +14,11 @@ sha256sums=('SKIP')
 package() {
     cd "$pkgname"
     install -d "${pkgdir}/etc/skel/.config/X11/"
+    install -d "${pkgdir}/etc/skel/.Xresources.d"
     install -Dm 644 ".Xresources" "${pkgdir}/etc/skel/.Xresources"
     install -Dm 644 ".Xmodmap" "${pkgdir}/etc/skel/.Xmodmap"
     install -Dm 644 ".xinitrc" "${pkgdir}/etc/skel/.xinitrc"
     install -Dm 644 ".xprofile" "${pkgdir}/etc/skel/.xprofile"
+    cp -rf ".Xresources.d" "${pkgdir}/etc/skel/
 
 }
