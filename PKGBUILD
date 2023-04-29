@@ -17,5 +17,6 @@ package() {
     install -Dm 644 ".Xresources" "${pkgdir}/etc/skel/.Xresources"
     install -Dm 644 ".Xmodmap" "${pkgdir}/etc/skel/.Xmodmap"
     install -Dm 644 ".xinitrc" "${pkgdir}/etc/skel/.xinitrc"
+    install -Dm 644 ".xprofile" "${pkgdir}/etc/skel/.xprofile"
 
 }
